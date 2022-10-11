@@ -36,7 +36,7 @@ const Error = () => {
             <h1 className="font-thin text-center text-6xl text-gray-800">
               GOT LOST ?
             </h1>
-            <Link to='/home'>
+            <Link to='/'>
               <button className="px-2 py-2 w-32 font-light transition ease-in duration-200 uppercase hover:bg-yellow-600 hover:text-white border-b text-2xl border-yellow-600 focus:outline-none">
                 Go Home
               </button>

@@ -5,7 +5,7 @@ export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-teal-400 dark:bg-gray-900 dark:text-white text-dark">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <a
@@ -15,7 +15,7 @@ export const NavBar = () => {
             className="inline-flex items-center"
           >
             <svg
-              className="w-8 text-teal-400"
+              className="w-8 dark:text-teal-400 text-gray-900"
               viewBox="0 0 24 24"
               strokeLinejoin="round"
               strokeWidth="2"
@@ -36,7 +36,7 @@ export const NavBar = () => {
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
               <Link
-                to="/home"
+                to="/"
                 aria-label="Home"
                 title="Home"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -138,7 +138,7 @@ export const NavBar = () => {
                     <ul className="space-y-4">
                       <li>
                         <Link
-                          to="/home"
+                          to="/"
                           aria-label="Home"
                           title="Home"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
