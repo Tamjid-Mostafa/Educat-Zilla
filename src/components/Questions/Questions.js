@@ -7,7 +7,7 @@ const Questions = () => {
   
 
   return (
-    <div>
+    <div className="container mx-auto">
       {
       questions.questions.map((quest) => (
         <Question key={quest.id} quest={quest}></Question>

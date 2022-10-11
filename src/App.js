@@ -40,7 +40,7 @@ function App() {
     }
   ])
   return (
-    <div className="App">
+    <div className="App dark:bg-gray-600 bg-teal-50">
       
       <RouterProvider router={router}></RouterProvider>
     </div>

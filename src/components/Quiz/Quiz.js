@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Quiz = ({ quiz }) => {
   const { id, name, logo, total } = quiz;
   return (
-    <div className="p-5 py-10 rounded-xl bg-teal-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer dark:bg-gray-800">
+    <div className="p-5 py-10 rounded-xl bg-teal-100 text-center transform duration-500 hover:-translate-y-2 cursor-pointer dark:bg-gray-800">
       <img className="mx-auto p-4 " src={logo} alt="" />
       <div className="mx-auto p-4">
         <h1 className="text-gray-900 font-bold text-2xl dark:text-white">
