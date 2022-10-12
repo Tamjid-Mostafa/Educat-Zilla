@@ -61,7 +61,7 @@ export const NavBar = () => {
                 title="Quizes"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Quizes
+                Topics
               </Link>
             </li>
             <li>
@@ -174,7 +174,7 @@ export const NavBar = () => {
                           title="Quizes"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Quizes
+                          Topics
                         </Link>
                       </li>
                       <li>

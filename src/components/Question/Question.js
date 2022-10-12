@@ -26,8 +26,8 @@ const Question = ({ quest, index }) => {
                 <input
                   onClick={() =>
                     option === correctAnswer
-                      ? toast.success("True", { autoClose: 500 })
-                      : toast.warning("False", { autoClose: 500 })
+                      ? toast.success("Correct", { autoClose: 500 })
+                      : toast.warning("Wrong", { autoClose: 500 })
                   }
                   value={option}
                   type="radio"
