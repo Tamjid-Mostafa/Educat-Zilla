@@ -14,8 +14,8 @@ const Questions = () => {
         </h1>
       </div>
       {
-      questions.map((quest) => (
-        <Question key={quest.id} quest={quest}></Question>
+      questions.map((quest, index) => (
+        <Question key={quest.id} index={index} quest={quest}></Question>
       ))}
     </div>
   );

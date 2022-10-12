@@ -2,11 +2,11 @@ import React from "react";
 import { toast } from "react-toastify";
 import { EyeIcon } from "@heroicons/react/24/solid";
 
-const Question = ({ quest }) => {
+const Question = ({ quest, index }) => {
   const { question, options, correctAnswer } = quest;
+
   return (
     <div className="">
-      
       <div className="relative mx-auto shadow-lg rounded-xl w-full max-w-lg p-6 bg-white dark:bg-gray-800 bg-teal-200 dark:text-white text-gray-600 overflow-hidden mt-6">
         <div>
           <EyeIcon
@@ -14,7 +14,7 @@ const Question = ({ quest }) => {
             className="w-8 h-8 sticky top-5 left-96"
           ></EyeIcon>
         </div>
-        <h4 className="mt-2 text-xl ">Question</h4>
+        <h4 className="mt-2 font-bold text-4xl ">{index + 1}.</h4>
         <div className="my-4 text-2xl ">{question.slice(3, -4)}</div>
         <div className="flex flex-col w-full">
           {options.map((option, index) => (
