@@ -169,6 +169,16 @@ export const NavBar = () => {
                       </li>
                       <li>
                         <Link
+                          to="/quizes"
+                          aria-label="Quizes"
+                          title="Quizes"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Quizes
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
                           to="/blogs"
                           aria-label="Blogs"
                           title="Blogs"

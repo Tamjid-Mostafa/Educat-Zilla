@@ -3,13 +3,18 @@ import { useLoaderData } from "react-router-dom";
 import Question from "../Question/Question";
 
 const Questions = () => {
-  const questions = useLoaderData().data;
+  const {name,questions} = useLoaderData().data;
   
 
   return (
-    <div className="container mx-auto">
+    <div className="mx-auto">
+      <div className="p-5 py-10 bg-teal-100 text-center dark:bg-gray-700">
+        <h1 className="text-gray-900 font-bold text-4xl dark:text-white">
+          Questions for {name}
+        </h1>
+      </div>
       {
-      questions.questions.map((quest) => (
+      questions.map((quest) => (
         <Question key={quest.id} quest={quest}></Question>
       ))}
     </div>

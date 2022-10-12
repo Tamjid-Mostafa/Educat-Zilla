@@ -6,6 +6,7 @@ const Question = ({ quest }) => {
   const { question, options, correctAnswer } = quest;
   return (
     <div className="">
+      
       <div className="relative mx-auto shadow-lg rounded-xl w-full max-w-lg p-6 bg-white dark:bg-gray-800 bg-teal-200 dark:text-white text-gray-600 overflow-hidden mt-6">
         <div>
           <EyeIcon
