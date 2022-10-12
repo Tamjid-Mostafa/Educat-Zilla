@@ -9,6 +9,13 @@ const Header = () => {
           <span className="block">If you practice hard,</span>
           <span className="block text-teal-500">You can win every battle.</span>
         </h2>
+        <div className="flex item-center justify-center mt-8">
+          <Link to="/quizes">
+            <button className="py-4 px-4  bg-teal-600 hover:bg-teal-700 focus:ring-teal-500 focus:ring-offset-teal-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+              Get Started
+            </button>
+          </Link>
+        </div>
         
       </div>
     </div>

@@ -1,14 +1,17 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import { NavBar } from '../components/NavBar/NavBar';
+import React, { createContext } from "react";
+import { Outlet, useLoaderData } from "react-router-dom";
+import { NavBar } from "../components/NavBar/NavBar";
+
+export const QuizesContext = createContext();
 
 const Main = () => {
-    return (
-        <div>
-            <NavBar></NavBar>
-            <Outlet></Outlet>
-        </div>
-    );
+  const quizes = useLoaderData().data;
+  return (
+    <QuizesContext.Provider value={quizes}>
+      <NavBar></NavBar>
+      <Outlet></Outlet>
+    </QuizesContext.Provider>
+  );
 };
 
 export default Main;
