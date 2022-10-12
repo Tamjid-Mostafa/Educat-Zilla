@@ -5,4 +5,8 @@
 
 **React Router, Hero Icon, Tailwind Component library**
 
-👍Created some 
+👍Created some components routed dynamically.
+👍This site is responsive using tailwind css
+👍Also added dark mode.
+
+
